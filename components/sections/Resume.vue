@@ -1,5 +1,5 @@
 <template>
-  <div id="resume">
+  <div id="resume" class="content-section">
     <div class="material-container"></div>
   </div>
 </template>
