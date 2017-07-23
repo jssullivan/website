@@ -41,12 +41,13 @@ a {
 
 .content-section {
   padding: 20px;
+  
+  &:first-child {
+    padding-top: 40px;
+  }
 }
 
 .material-container {
-  &::first-child {
-    margin-top: 20px;
-  }
   background-color: #FFFFFF;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   font-family: 'Lato', sans-serif;
@@ -55,20 +56,18 @@ a {
   border: 15px solid transparent;
 
   .title-box {
-    padding-bottom: 20px;
+    padding-bottom: 10px;
+
     .title {
-      font-size: 32pt;
+      font-size: 24pt;
       font-weight: 500;
     }
     .sub-title {
-      font-size: 15pt;
+      font-size: 12pt;
       font-weight: 300;
-      padding-left: 2pt;
+      padding-left: 1pt;
     }
-
   }
-
-
 }
 
 </style>

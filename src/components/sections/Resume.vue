@@ -6,7 +6,7 @@
         <div class="sub-title">PDF Download</div>
       </div>
       <div class="download-grid">
-        <div onClick="window.location='/downloads/Resume.pdf'; return false;" class="material-container download-box">
+        <div onClick="window.open('/downloads/Resume.pdf', '_blank')" class="material-container download-box">
           <i class="fa fa-download" aria-hidden="true"></i>
           <span class="download-text"> Resume.pdf</span>
       </div>
@@ -28,11 +28,13 @@ export default {
 
 <style lang="scss">
 .download-grid {
-  display: grid;
-  grid-template-columns: 2fr 2fr 2fr;
+  display: flex;
+  justify-content: center;
   .download-box {
     grid-column: 2;
+    margin: 0px;
     transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    cursor: pointer;
     &:hover {
       box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     }

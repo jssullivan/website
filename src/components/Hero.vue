@@ -24,8 +24,8 @@ export default {
   },
 
   mounted: function() {
-    window.addEventListener('scroll', () => {this.setScrollOpacity(0, window.innerHeight / 2)});
-    window.addEventListener('resize', () => {this.setScrollOpacity(0, window.innerHeight / 2)});
+    window.addEventListener('scroll', () => {this.setScrollOpacity()});
+    window.addEventListener('resize', () => {this.setScrollOpacity()});
   },
 
   methods: {

@@ -43,9 +43,9 @@ export default {
   methods: {
     showNavSet: function() {
       let pos = window.scrollY;
-      let height = window.innerHeight + 25;
+      let height = window.innerHeight;
 
-      if (pos > height) {
+      if (pos >= height) {
         this.showNav = true;
       } else {
         this.showNav = false;
