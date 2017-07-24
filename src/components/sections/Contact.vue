@@ -38,9 +38,9 @@ export default {
   #contact-links {
     font-size: 16pt;
     font-weight: 200;
-    display: flex;
+    display: grid;
     text-align: center;
-    justify-content: space-evenly;
+    grid-template-columns: 1fr 1fr 1fr;
 
     div {
       cursor: pointer;
