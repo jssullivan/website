@@ -3,20 +3,21 @@
     <div class="material-container">
       <div class="title-box">
         <div class="title">Contact</div>
+        <div class="sub-title">Links</div>
       </div>
       <div id="contact-links">
-        <div onClick="window.open('/downloads/Resume.pdf', '_blank')">
+        <a href="mailto:james@scelos.com" target="_blank">
           <i class="fa fa-envelope" aria-hidden="true"></i>
           Email
-        </div>
-        <div onClick="window.open('/downloads/Resume.pdf', '_blank')">
+        </a>
+        <a href="https://www.linkedin.com/in/james-sullivan-601b10108" target="_blank">
           <i class="fa fa-linkedin" aria-hidden="true"></i>
           LinkedIn
-        </div>
-        <div onClick="window.open('/downloads/Resume.pdf', '_blank')">
+        </a>
+        <a href="https://github.com/jssullivan" target="_blank">
           <i class="fa fa-github" aria-hidden="true"></i>
           Github
-        </div>
+        </a>
       </div>
     </div>
   </div>
@@ -37,9 +38,10 @@ export default {
   #contact-links {
     font-size: 16pt;
     font-weight: 200;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
     text-align: center;
+    justify-content: space-evenly;
+
     div {
       cursor: pointer;
     }
