@@ -10,7 +10,7 @@
         <div id="profile-image-two" class="profile-image"></div>
       </div>
       <div class="profile-bio" v-for="line in description">
-        &emsp;{{line}}
+        {{line}}
       </div>
     </div>
   </div>
@@ -31,7 +31,7 @@ export default {
   .profile-container {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr 2fr 1fr;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     .profile-image {
         background-size: cover;
         box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
