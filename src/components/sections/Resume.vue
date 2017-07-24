@@ -19,9 +19,6 @@
 export default {
   name: "resume",
   data: function () {
-    return {
-      scrollOpacity: 1
-    }
   }
 }
 </script>

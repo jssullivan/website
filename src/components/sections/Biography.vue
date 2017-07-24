@@ -5,24 +5,52 @@
         <div class="title">Biography</div>
         <div class="sub-title">About Me</div>
       </div>
+      <div class="profile-container">
+        <div id="profile-image-one" class="profile-image"></div>
+        <div id="profile-image-two" class="profile-image"></div>
+      </div>
+      <div class="profile-bio" v-for="line in description">
+        &emsp;{{line}}
+      </div>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: "biography"
+  name: "biography",
+  data: function () {
+    return {
+      description: this.$staticData.biography
+    }
+  }
 }
 </script>
 
 <style lang="scss">
-  #biography {
+  .profile-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 2fr 1fr;
+    padding-bottom: 10px;
+    .profile-image {
+        background-size: cover;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 
-    .material-container {
-      display: grid;
-      grid-template-columns: 1fr 5fr 1fr;
-      grid-template-rows: auto 70px;
-
+        height: 200px;
+        width: 300px;
+        border-radius: 3px;
     }
+  }
+  .profile-bio {
+    padding-bottom: 15px
+  }
+  #profile-image-one {
+    grid-column: 2;
+    background-image: url(../../assets/profile1.jpg);
+  }
+
+  #profile-image-two {
+    grid-column: 4;
+    background-image: url(../../assets/profile2.jpg);
   }
 </style>

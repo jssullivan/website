@@ -40,10 +40,10 @@ a {
 }
 
 .content-section {
-  padding: 20px;
-  
+  padding: 10px;
+
   &:first-child {
-    padding-top: 40px;
+    padding-top: 20px;
   }
 }
 

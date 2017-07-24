@@ -1,3 +1,6 @@
 {
-    "projects" : "test"
+    "biography" : [
+        "I am a Software Engineer currently living in San Fransisco, California, originally from Boston, Massachusetts. My development focus has been on Full-Stack Web Development, with the goal of creating awesome new products. I have Worked in ReactJS and AngularJS on the frontend and NodeJS and Java on the backend. Currently at Vinolytics, a Wine Management startup, as a Full Stack Contract Developer.",
+        "When I am not programming I enjoy going outdoors, whether it is to the woods or the sea. In the woods I usually go Backpacking but I have tried Ice Climbing. Of the National Parks my favorites are Grand Teton in Wyoming, Zion in Utah and Olympic in Washington. I am also a PADI Advanced Open Water SCUBA Diver and have enjoyed diving in Key Largo, FL and Rockport, MA."
+    ]
 }
