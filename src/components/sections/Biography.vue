@@ -42,7 +42,7 @@ export default {
     }
   }
   .profile-bio {
-    padding-bottom: 15px;
+    padding: 15px 10px 0px;
     font-size: 11pt;
   }
   #profile-image-one {
