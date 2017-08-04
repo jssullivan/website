@@ -25,7 +25,7 @@ export default {
 
 body {
   margin: 0;
-  background-color: #E6E6E6;
+  background-color: #F3F3F3;
 }
 
 a {
@@ -40,20 +40,21 @@ a {
 }
 
 .content-section {
-  padding: 10px;
+  padding: 3px;
 
   &:first-child {
-    padding-top: 20px;
+    padding-top: 10px;
   }
 }
 
 .material-container {
   background-color: #FFFFFF;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  box-shadow: 0 0 0 1px rgba(0,0,0,.1),0 2px 3px rgba(0,0,0,.2);;
   font-family: 'Lato', sans-serif;
   margin: 10px;
   text-align: left;
   border: 15px solid transparent;
+  border-radius: 2px;
 
   .title-box {
     padding-bottom: 10px;

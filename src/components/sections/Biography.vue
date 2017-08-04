@@ -43,7 +43,7 @@ export default {
   }
   .profile-bio {
     padding: 15px 10px 0px;
-    font-size: 11pt;
+    font-size: 12pt;
   }
   #profile-image-one {
     grid-column: 2;
