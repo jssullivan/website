@@ -6,7 +6,7 @@
         <div class="sub-title">PDF Download</div>
       </div>
       <div class="download-grid">
-        <div onClick="window.open('/downloads/Resume.pdf', '_blank')" class="download-box">
+        <div onClick="window.open('/static/Resume.pdf', '_blank')" class="download-box">
           <i class="fa fa-download" aria-hidden="true"></i>
           <span class="download-text"> Resume</span>
       </div>
