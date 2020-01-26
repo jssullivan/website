@@ -120,7 +120,6 @@ const webpackConfig = merge(baseWebpackConfig, {
     new CopyWebpackPlugin([
       {
         from: path.resolve(__dirname, '../_redirects'),
-        to: '_redirects',
         ignore: ['.*']
       }
     ])

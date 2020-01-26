@@ -64,6 +64,12 @@ const devWebpackConfig = merge(baseWebpackConfig, {
         to: config.dev.assetsSubDirectory,
         ignore: ['.*']
       }
+    ]),
+    new CopyWebpackPlugin([
+      {
+        from: path.resolve(__dirname, '../_redirects'),
+        ignore: ['.*']
+      }
     ])
   ]
 })
