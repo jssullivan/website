@@ -24,7 +24,6 @@ import Resume from './sections/Resume.vue'
 import Hobbies from './sections/Hobbies.vue'
 import Contact from './sections/Contact.vue'
 
-console.log(Biography);
 export default {
   name: "main-body",
   components: { Biography, Projects, Resume, Hobbies, Contact},
@@ -83,6 +82,13 @@ a {
         color: inherit;
         text-decoration: none;
         margin-bottom: 15px;
+      }
+    }
+
+    @media only screen and (max-width: 600px) {
+      grid-template-columns: minmax(0, auto);
+      #body-nav {
+        display: none
       }
     }
 }

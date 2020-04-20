@@ -30,15 +30,29 @@ export default {
 <style lang="scss">
   .profile-container {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr 2fr 1fr;
+    grid-template-columns: 1fr 10fr 1fr 10fr 1fr;
     padding-bottom: 20px;
     .profile-image {
         background-size: cover;
         box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 
         height: 300px;
-        width: 400px;
+        min-width: 0px;
         border-radius: 3px;
+    }
+
+    @media only screen and (max-width: 1100px) {
+      grid-template-columns: 1fr 10fr 1fr;
+      .profile-image {
+        height: 400px;
+      }
+    }
+
+    @media only screen and (max-width: 600px) {
+      grid-template-columns: 1fr 10fr 1fr;
+      .profile-image {
+        height: 300px;
+      }
     }
   }
   .profile-bio {
