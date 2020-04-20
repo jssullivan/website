@@ -41,14 +41,14 @@ export default {
         border-radius: 3px;
     }
 
-    @media only screen and (max-width: 1100px) {
-      grid-template-columns: 1fr 10fr 1fr;
+    @media only screen and (max-width: 1000px) {
+      grid-template-columns: 1fr 20fr 1fr;
       .profile-image {
         height: 400px;
       }
     }
 
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 700px) {
       grid-template-columns: 1fr 10fr 1fr;
       .profile-image {
         height: 300px;
